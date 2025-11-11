@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetSuite Login Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+ 
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center h-screen">
+ 
+    <div class="bg-white shadow-xl rounded-2xl p-10 w-full max-w-md text-center">
+        <img src="https://system.netsuite.com/core/media/media.nl?id=12345&c=ACCOUNT_ID&h=abcdef" alt="Company Logo"
+            class="mx-auto mb-6 w-28 h-28 object-contain" onerror="this.style.display='none'">
+ 
+        <h1 class="text-2xl font-semibold text-gray-800 mb-2">Welcome to NetSuite</h1>
+        <p class="text-gray-500 mb-8">Choose your preferred login method</p>
+ 
+        <button onclick="window.open('https://system.netsuite.com/pages/customerlogin.jsp', '_blank')"
+            class="w-full mb-4 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-lg shadow-md transition-all">
+            Regular NetSuite Login
+        </button>
+ 
+        <button
+            onclick="window.open('https://login.microsoftonline.com/655a0e0e-4a74-4a0c-86d8-370a992e90a6/saml2?SAMLRequest=jZHBaoNAEIZfRfYeXc3abBcVTEwgkEJJ2h56W%2byUCO6u3Rlj%2b%2fZVQy4tlF6H%2bX%2b%2bbyZDbdpOlT2d7RE%2bekAKPk1rMWe9t8ppbFBZbQAV1epUPhxUEnJlgPSbJs2CfZWznRSVlLIsl2shNvFaCrFcpaXYyiTm1f2WBS%2fgsXE2Z2N4zCD2sLdI2tI44km6iPkivnviqYq5EiJc8fR12nvUiM0FcvauWwQWlIjgaWzaOIu9AX8Cf2lqeD4ecnYm6lBFEX4hgQktEPYNQVg7E02aSaRrZFc9NXv%2fLdl5R652LQt2ztcw3%2bhGUmSzhP%2fPsfQNmhUT4kg4DMMPvC6LroVFFv1%2bSfEN', '_blank')"
+            class="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 rounded-lg shadow-md transition-all">
+            Login with SSO (SAML)
+        </button>
+ 
+        <p class="text-xs text-gray-400 mt-6">
+        </p>
+    </div>
+ 
+</body>
+ 
+</html>
